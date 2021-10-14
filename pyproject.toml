@@ -10,6 +10,7 @@ python = "^3.9"
 SQLAlchemy = "^1.4.25"
 psycopg2 = "^2.9.1"
 mysqlclient = "^2.0.3"
+structlog = "^21.2.0"
 
 [tool.poetry.dev-dependencies]
 black = "^21.9b0"
