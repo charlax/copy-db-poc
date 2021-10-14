@@ -115,6 +115,13 @@ def copy_db(in_db_url: str, out_db_url: str) -> None:
         # No need for default value (such as nextval(...))
         del column_dict["default"]
         column_dict["type"] = get_generic_type(previously)
+        logger.info(
+            "reflected type",
+            table=table.name,
+            column=column_dict["name"],
+            previous=previously,
+            new=column_dict["type"],
+        )
 
     metadata.reflect(bind=in_engine)
 
