@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "copy-db-poc"
+version = "0.1.0"
+description = ""
+authors = ["Charles-Axel Dein <120501+charlax@users.noreply.github.com>"]
+license = "Public domain"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+SQLAlchemy = "^1.4.25"
+psycopg2 = "^2.9.1"
+mysqlclient = "^2.0.3"
+
+[tool.poetry.dev-dependencies]
+black = "^21.9b0"
+ipdb = "^0.13.9"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
