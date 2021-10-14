@@ -1,2 +1,3 @@
 # copy-db-poc
-POC for copying a db from postgres to mysql
+
+This is a POC for copying a db from postgres to mysql.
